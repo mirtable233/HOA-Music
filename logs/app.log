@@ -1,0 +1,127 @@
+2025-08-11T00:44:48.699+08:00  INFO 31112 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 31112 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T00:44:48.701+08:00  INFO 31112 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T00:44:48.746+08:00  INFO 31112 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T00:44:48.747+08:00  INFO 31112 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T00:44:49.218+08:00  INFO 31112 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T00:44:49.219+08:00  INFO 31112 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T00:44:49.236+08:00  INFO 31112 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-08-11T00:44:49.354+08:00  WARN 31112 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T00:44:49.742+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T00:44:49.754+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T00:44:49.754+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T00:44:49.789+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T00:44:49.790+08:00  INFO 31112 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2025-08-11T00:44:51.113+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T00:44:51.162+08:00  INFO 31112 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T00:44:51.177+08:00  INFO 31112 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.869 seconds (process running for 3.169)
+2025-08-11T00:46:25.987+08:00  INFO 31112 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T00:46:26.179+08:00  INFO 31112 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T00:47:12.852+08:00  INFO 31988 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 31988 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T00:47:12.854+08:00  INFO 31988 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T00:47:12.891+08:00  INFO 31988 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T00:47:12.891+08:00  INFO 31988 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T00:47:13.404+08:00  INFO 31988 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T00:47:13.407+08:00  INFO 31988 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T00:47:13.424+08:00  INFO 31988 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-08-11T00:47:13.529+08:00  WARN 31988 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T00:47:13.893+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T00:47:13.907+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T00:47:13.907+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T00:47:13.945+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T00:47:13.946+08:00  INFO 31988 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1054 ms
+2025-08-11T00:47:15.051+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T00:47:15.105+08:00  INFO 31988 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T00:47:15.118+08:00  INFO 31988 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.628 seconds (process running for 2.921)
+2025-08-11T00:47:24.905+08:00  INFO 31988 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T00:47:25.051+08:00  INFO 31988 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T00:49:51.531+08:00  INFO 31728 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 31728 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T00:49:51.533+08:00  INFO 31728 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T00:49:51.571+08:00  INFO 31728 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T00:49:51.572+08:00  INFO 31728 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T00:49:52.049+08:00  INFO 31728 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T00:49:52.050+08:00  INFO 31728 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T00:49:52.069+08:00  INFO 31728 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-08-11T00:49:52.179+08:00  WARN 31728 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T00:49:52.515+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T00:49:52.528+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T00:49:52.528+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T00:49:52.567+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T00:49:52.567+08:00  INFO 31728 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
+2025-08-11T00:49:53.725+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T00:49:53.767+08:00  INFO 31728 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T00:49:53.780+08:00  INFO 31728 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.606 seconds (process running for 2.907)
+2025-08-11T00:51:42.047+08:00  INFO 31728 --- [HOA-server] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T00:51:42.048+08:00  INFO 31728 --- [HOA-server] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T00:51:42.049+08:00  INFO 31728 --- [HOA-server] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-11T01:03:31.617+08:00  INFO 31728 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T01:03:32.072+08:00  INFO 31728 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T01:03:40.488+08:00  INFO 29832 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 29832 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T01:03:40.490+08:00  INFO 29832 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T01:03:40.527+08:00  INFO 29832 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T01:03:40.527+08:00  INFO 29832 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T01:03:41.033+08:00  INFO 29832 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T01:03:41.035+08:00  INFO 29832 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T01:03:41.052+08:00  INFO 29832 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-08-11T01:03:41.167+08:00  WARN 29832 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T01:03:41.531+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T01:03:41.544+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T01:03:41.544+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T01:03:41.582+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T01:03:41.582+08:00  INFO 29832 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1054 ms
+2025-08-11T01:03:42.345+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T01:03:42.375+08:00  INFO 29832 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T01:03:42.384+08:00  INFO 29832 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.285 seconds (process running for 2.585)
+2025-08-11T01:03:58.477+08:00  INFO 29832 --- [HOA-server] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T01:03:58.478+08:00  INFO 29832 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T01:03:58.483+08:00  INFO 29832 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-11T01:04:25.759+08:00  WARN 29832 --- [HOA-server] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:05:08.254+08:00  INFO 29832 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T01:05:08.398+08:00  INFO 29832 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T01:05:10.996+08:00  INFO 34372 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 34372 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T01:05:10.998+08:00  INFO 34372 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T01:05:11.044+08:00  INFO 34372 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T01:05:11.044+08:00  INFO 34372 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T01:05:11.570+08:00  INFO 34372 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T01:05:11.572+08:00  INFO 34372 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T01:05:11.592+08:00  INFO 34372 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-08-11T01:05:11.721+08:00  WARN 34372 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T01:05:12.098+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T01:05:12.108+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T01:05:12.108+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T01:05:12.138+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T01:05:12.138+08:00  INFO 34372 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1093 ms
+2025-08-11T01:05:13.013+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T01:05:13.051+08:00  INFO 34372 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T01:05:13.062+08:00  INFO 34372 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.455 seconds (process running for 2.777)
+2025-08-11T01:05:16.574+08:00  INFO 34372 --- [HOA-server] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T01:05:16.575+08:00  INFO 34372 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T01:05:16.576+08:00  INFO 34372 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-08-11T01:05:16.587+08:00  WARN 34372 --- [HOA-server] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:05:17.614+08:00  WARN 34372 --- [HOA-server] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:05:29.086+08:00  INFO 34372 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T01:05:29.231+08:00  INFO 34372 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T01:06:50.372+08:00  INFO 22264 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Starting HoaServerApplication using Java 17.0.14 with PID 22264 (D:\IdeaProjects\HOA-Music\HOA-server\target\classes started by hp in D:\IdeaProjects\HOA-Music)
+2025-08-11T01:06:50.376+08:00  INFO 22264 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T01:06:50.415+08:00  INFO 22264 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T01:06:50.416+08:00  INFO 22264 --- [HOA-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T01:06:51.022+08:00  INFO 22264 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-11T01:06:51.024+08:00  INFO 22264 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-11T01:06:51.044+08:00  INFO 22264 --- [HOA-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-08-11T01:06:51.165+08:00  WARN 22264 --- [HOA-server] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[org.csu.hoaserver]' package. Please check your configuration.
+2025-08-11T01:06:51.585+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-11T01:06:51.598+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T01:06:51.599+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T01:06:51.641+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T01:06:51.641+08:00  INFO 22264 --- [HOA-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1225 ms
+2025-08-11T01:06:52.619+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T01:06:52.656+08:00  INFO 22264 --- [HOA-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-11T01:06:52.667+08:00  INFO 22264 --- [HOA-server] [restartedMain] org.csu.hoaserver.HoaServerApplication   : Started HoaServerApplication in 2.719 seconds (process running for 3.047)
+2025-08-11T01:06:55.510+08:00  INFO 22264 --- [HOA-server] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T01:06:55.510+08:00  INFO 22264 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T01:06:55.511+08:00  INFO 22264 --- [HOA-server] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-11T01:06:55.525+08:00  WARN 22264 --- [HOA-server] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:06:57.354+08:00  WARN 22264 --- [HOA-server] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:06:58.174+08:00  WARN 22264 --- [HOA-server] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:08:35.131+08:00  WARN 22264 --- [HOA-server] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-08-11T01:09:44.275+08:00  INFO 22264 --- [HOA-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T01:09:44.422+08:00  INFO 22264 --- [HOA-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
