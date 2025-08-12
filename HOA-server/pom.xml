@@ -42,6 +42,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.csu</groupId>
+            <artifactId>HOA-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.csu</groupId>
+            <artifactId>HOA-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
@@ -72,6 +82,15 @@
             <artifactId>mybatis-spring-boot-starter-test</artifactId>
             <version>3.0.5</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.csu</groupId>
+            <artifactId>HOA-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
 
