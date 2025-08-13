@@ -1,10 +1,11 @@
 package org.csu.hoaserver.controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import DO.User;
+import VO.LoginVO;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.web.bind.annotation.*;
+import response.CommonResponse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+
+    @PostMapping("/login")
+    public CommonResponse<LoginVO> login(@RequestBody User user) {
+
+        return CommonResponse.createForError("用户已存在");
+    }
+
     @GetMapping("/test")
     public String test() {
         System.out.println("===========================================================");

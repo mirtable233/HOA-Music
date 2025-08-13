@@ -1,5 +1,5 @@
 aliyun:
   oss:
-    endpoint: https://oss-cn-beijing.aliyuncs.com
-    bucketName: mirtable233
-    region: cn-beijing
+    endpoint: ${HOA.alioss.endpoint}
+    bucketName: ${HOA.alioss.bucketName}
+    region: ${HOA.alioss.region}

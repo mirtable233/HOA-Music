@@ -1,0 +1,19 @@
+HOA:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hoa
+    username: root
+    password: 050326
+  alioss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: mirtable233
+    region: cn-beijing
+  jwt:
+    secret: mirtable233
+  mail:
+    username: 2329435582@qq.com
+    password: squoyzccmssgdhih
+  redis:
+    host: 192.168.100.135
+    port: 6379
+    timeout: 5000

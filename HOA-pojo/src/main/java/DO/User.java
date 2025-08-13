@@ -1,5 +1,6 @@
 package DO;
 
+import Enumeration.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,8 +13,9 @@ import java.time.LocalDateTime;
 public class User {
     private Integer id;
     private String username;
+    private String name;
     private String password;
-    private Integer role;
+    private Role role;
     private String email;
     private String avatar;
     private String phone;
