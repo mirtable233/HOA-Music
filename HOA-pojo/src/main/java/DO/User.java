@@ -14,12 +14,14 @@ public class User {
     private Integer id;
     private String username;
     private String name;
+    private String gender;
     private String password;
     private Role role;
     private String email;
     private String avatar;
     private String phone;
-    private LocalDateTime creatTime;
+    private Integer status;
+    private LocalDateTime createTime;
     private LocalDateTime lastLoginTime;
     private LocalDateTime updateTime;
     private String oauthProvider;

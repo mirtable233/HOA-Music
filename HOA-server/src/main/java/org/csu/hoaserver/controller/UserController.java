@@ -3,7 +3,10 @@ package org.csu.hoaserver.controller;
 
 import DO.User;
 import VO.LoginVO;
-import org.apache.ibatis.annotations.Param;
+import enumeration.ResponseCode;
+import org.csu.hoaserver.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import response.CommonResponse;
 
@@ -14,10 +17,29 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
-    @PostMapping("/login")
-    public CommonResponse<LoginVO> login(@RequestBody User user) {
+    @Autowired
+    private UserService userService;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
-        return CommonResponse.createForError("用户已存在");
+    @PostMapping("/register")
+    public CommonResponse<String> register(@RequestBody User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        String res = userService.register(user);
+        if(res==null||res.isEmpty()) {
+         return CommonResponse.createForError(ResponseCode.ACCOUNT_ALREADY_EXIST_OR_EMPTY);
+        }
+        return CommonResponse.createForSuccess("注册成功");
+    }
+
+    @PostMapping("/login")
+    public CommonResponse<LoginVO> login(String username, String password) {
+        System.out.println(username);
+        LoginVO loginVO = userService.login(username,password);
+        if (loginVO == null) {
+            return CommonResponse.createForError(ResponseCode.WRONG_PASSWORD_OR_USERNAME);
+        }
+        return CommonResponse.createForSuccess(loginVO);
     }
 
     @GetMapping("/test")

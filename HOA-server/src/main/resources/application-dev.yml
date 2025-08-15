@@ -3,7 +3,7 @@ HOA:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hoa
     username: root
-    password: 050326
+    password: "050326"
   alioss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
     bucketName: mirtable233

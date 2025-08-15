@@ -2,8 +2,23 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.csu.hoaserver.dao.UserDao">
+    <insert id="insertUser">
+        INSERT INTO user (username, name, gender, password, role, email, avatar, phone, create_time, last_login_time, update_time, oauth_provider, oauth_uid)
+        VALUES (#{username}, #{name}, #{gender},#{password}, #{role}, #{email}, #{avatar}, #{phone}, #{createTime}, #{lastLoginTime}, #{updateTime}, #{oauthProvider}, #{oauthUid})
+    </insert>
+
+    <update id="updateLastLoginTime">
+        UPDATE user
+        SET last_login_time = NOW()
+        WHERE username = #{username};
+    </update>
+
     <select id="findUserByUsername" resultType="DO.User">
        select * from user
             where username = #{username}
+    </select>
+    <select id="findUserByUsernameAndPassword" resultType="DO.User">
+        select * from user
+        where username = #{username} and password = #{password}
     </select>
 </mapper>

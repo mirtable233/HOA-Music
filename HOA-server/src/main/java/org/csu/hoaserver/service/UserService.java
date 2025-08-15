@@ -4,5 +4,8 @@ import DO.User;
 import VO.LoginVO;
 
 public interface UserService {
-    LoginVO login(User user);
+    LoginVO login(String username, String password);
+
+    String register(User user);
+
 }
