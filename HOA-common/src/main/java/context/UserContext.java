@@ -2,13 +2,13 @@ package context;
 
 public class UserContext {
 
-    public static ThreadLocal<Long> threadLocal = new ThreadLocal<>();
+    public static ThreadLocal<Integer> threadLocal = new ThreadLocal<>();
 
-    public static void setCurrentId(long id) {
+    public static void setCurrentId(int id) {
         threadLocal.set(id);
     }
 
-    public static Long getCurrentId() {
+    public static Integer getCurrentId() {
         return threadLocal.get();
     }
 

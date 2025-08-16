@@ -6,9 +6,12 @@ import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.common.auth.CredentialsProviderFactory;
 import com.aliyun.oss.common.auth.EnvironmentVariableCredentialsProvider;
 import com.aliyun.oss.common.comm.SignVersion;
+import com.aliyuncs.exceptions.ClientException;
+import org.springframework.web.multipart.MultipartFile;
 import properties.AliyunOSSProperties;
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
@@ -26,7 +29,7 @@ public class AliyunOSSOperator {
 //    private String bucketName;
 //    @Value("${aliyun.oss.region}")
 //    private String region;
-    public String upload(byte[] content, String originalFilename) throws Exception {
+    public String upload(byte[] content, String originalFilename) throws ClientException {
         String endpoint = aliyunOSSProperties.getEndpoint();
         String bucketName = aliyunOSSProperties.getBucketName();
         String region = aliyunOSSProperties.getRegion();
@@ -59,4 +62,9 @@ public class AliyunOSSOperator {
         return endpoint.split("//")[0] + "//" + bucketName + "." + endpoint.split("//")[1] + "/" + objectName;
     }
 
+    public String uploadFile(MultipartFile file) throws IOException, ClientException {
+        String fileName = file.getOriginalFilename();
+        assert fileName != null;
+        return upload(file.getBytes(), fileName);
+    }
 }

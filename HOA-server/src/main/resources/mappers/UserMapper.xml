@@ -7,6 +7,7 @@
         VALUES (#{username}, #{name}, #{gender},#{password}, #{role}, #{email}, #{avatar}, #{phone}, #{createTime}, #{lastLoginTime}, #{updateTime}, #{oauthProvider}, #{oauthUid})
     </insert>
 
+
     <update id="updateLastLoginTime">
         UPDATE user
         SET last_login_time = NOW()

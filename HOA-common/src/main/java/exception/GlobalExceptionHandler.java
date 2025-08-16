@@ -2,8 +2,14 @@ package exception;
 
 
 
+
+import com.aliyuncs.exceptions.ClientException;
 import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
+import org.jaudiotagger.audio.exceptions.CannotReadException;
+import org.jaudiotagger.audio.exceptions.InvalidAudioFrameException;
+import org.jaudiotagger.audio.exceptions.ReadOnlyFileException;
+import org.jaudiotagger.tag.TagException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.HttpStatus;
@@ -20,6 +26,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import response.CommonResponse;
 import enumeration.ResponseCode;
 
+import java.io.IOException;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 import java.nio.file.AccessDeniedException;
@@ -173,5 +180,64 @@ public class GlobalExceptionHandler {
         return CommonResponse.createForError(400, e.getErrorMessage());
     }
 
+    // 处理 IO 异常
+    @ExceptionHandler(IOException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public CommonResponse<Object> handleIOException(IOException e) {
+        // 记录日志方便排查
+        log.error("文件上传发生 IO 异常: {}", e.getMessage(), e);
+        // 返回统一格式
+        return CommonResponse.createForError("文件上传失败（IO错误）");
+    }
+
+    // 处理阿里云 OSS 客户端异常
+    @ExceptionHandler(ClientException.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @ResponseBody
+    public CommonResponse<Object> handleClientException(ClientException e) {
+        log.error("文件上传发生 OSS 客户端异常: {}", e.getMessage(), e);
+        return CommonResponse.createForError("文件上传失败（OSS客户端错误）");
+    }
+
+    /**
+     * 处理 Jaudiotagger 无法读取文件异常
+     */
+    @ExceptionHandler(CannotReadException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public CommonResponse<Object> handleCannotReadException(CannotReadException e) {
+        return CommonResponse.createForError(400, "音频文件无法读取: " + e.getMessage());
+    }
+
+    /**
+     * 处理 Jaudiotagger 标签解析异常
+     */
+    @ExceptionHandler(TagException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public CommonResponse<Object> handleTagException(TagException e) {
+        return CommonResponse.createForError(400, "音频标签解析失败: " + e.getMessage());
+    }
+
+    /**
+     * 处理只读文件异常
+     */
+    @ExceptionHandler(ReadOnlyFileException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public CommonResponse<Object> handleReadOnlyFileException(ReadOnlyFileException e) {
+        return CommonResponse.createForError(400, "音频文件为只读，无法修改: " + e.getMessage());
+    }
+
+    /**
+     * 处理无效音频帧异常
+     */
+    @ExceptionHandler(InvalidAudioFrameException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public CommonResponse<Object> handleInvalidAudioFrameException(InvalidAudioFrameException e) {
+        return CommonResponse.createForError(400, "音频帧无效: " + e.getMessage());
+    }
 
 }

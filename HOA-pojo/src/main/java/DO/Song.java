@@ -3,6 +3,9 @@ package DO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -22,6 +25,6 @@ public class Song {
     private String url;          // 歌曲文件地址
     private String lyric;        // 歌词文本或地址
     private Integer uploaderId;  // 上传者ID（关联user表）
-    private Date releaseDate;    // 发行日期
-    private Date uploadDate;     // 上传日期
+    private LocalDate releaseDate;    // 发行日期
+    private LocalDate uploadDate;     // 上传日期
 }

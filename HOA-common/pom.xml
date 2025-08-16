@@ -66,5 +66,11 @@
             <version>6.0.0</version> <!-- 版本号根据你的Spring Boot版本调整 -->
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org</groupId>
+            <artifactId>jaudiotagger</artifactId>
+            <version>2.0.3</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

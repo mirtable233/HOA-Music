@@ -2,4 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.csu.hoaserver.dao.SongDao">
+    <insert id="uploadSong" useGeneratedKeys="true">
+        INSERT INTO song
+        (name, duration, main_singer_id, producer, composer, label, language, description,
+        cover, url, lyric, uploader_id, release_date, upload_date)
+        VALUES
+            (#{song.name}, #{song.duration}, #{song.mainSingerId}, #{song.producer}, #{song.composer},
+            #{song.label}, #{song.language}, #{song.description},
+            #{song.cover}, #{song.url}, #{song.lyric}, #{song.uploaderId},
+            #{song.releaseDate}, #{song.uploadDate})
+    </insert>
 </mapper>

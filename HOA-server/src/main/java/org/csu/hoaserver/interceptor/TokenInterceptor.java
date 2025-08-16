@@ -6,10 +6,12 @@ import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import util.JwtUtil;
 
 @Slf4j
+@Component
 public class TokenInterceptor implements HandlerInterceptor {
 
     @Override
@@ -18,7 +20,7 @@ public class TokenInterceptor implements HandlerInterceptor {
         String requestURI = request.getRequestURI();
 
         if (requestURI.contains("/login")) {
-            log.info("注册请求，放行");
+            log.info("登录请求，放行");
             return true;
         }
 
