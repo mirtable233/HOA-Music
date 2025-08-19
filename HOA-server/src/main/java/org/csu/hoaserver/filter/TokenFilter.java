@@ -25,6 +25,10 @@ public class TokenFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
             return;
         }
+        if (requestURI.contains("/register")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
 
         if (token == null || token.isEmpty()) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

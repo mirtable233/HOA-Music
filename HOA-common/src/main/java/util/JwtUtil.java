@@ -26,7 +26,7 @@ public class JwtUtil {
         return Jwts.builder()
                 .signWith(SignatureAlgorithm.HS256,SECRET)
                 .addClaims(map)
-                .setExpiration(new Date(System.currentTimeMillis()+7200*1000))
+                .setExpiration(new Date(System.currentTimeMillis()+720000*1000))
                 .compact();
     }
 

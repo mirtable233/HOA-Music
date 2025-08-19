@@ -23,7 +23,10 @@ public class TokenInterceptor implements HandlerInterceptor {
             log.info("登录请求，放行");
             return true;
         }
-
+        if (requestURI.contains("/register")) {
+            log.info("注册请求，放行");
+            return true;
+        }
         if(token == null || token.isEmpty()) {
             log.info("令牌为空，响应401");
             response.setStatus(ResponseCode.UNAUTHORIZED.getCode());

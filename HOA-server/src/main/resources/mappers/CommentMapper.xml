@@ -6,4 +6,11 @@
         INSERT INTO comment (content, create_time,  user_id,  type,target_id)
         VALUES (#{content}, #{createTime}, #{userId},  #{type},#{targetId})
     </insert>
+
+    <select id="list" resultType="DO.Comment">
+        SELECT id, type, target_id, user_id, content, create_time
+        FROM comment
+        WHERE target_id = #{targetId} AND type = #{type}
+        ORDER BY create_time DESC
+    </select>
 </mapper>

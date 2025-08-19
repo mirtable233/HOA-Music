@@ -2,6 +2,9 @@ package org.csu.hoaserver.controller;
 
 import DO.Comment;
 import DTO.CommentSaveDTO;
+import DTO.CommonPageDTO;
+import Enumeration.CommentType;
+import com.github.pagehelper.PageInfo;
 import org.csu.hoaserver.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +27,7 @@ public class CommentController {
     }
 
     @PostMapping("/list")
-    public CommonResponse<List<Comment>> list(Integer id) {
-        return CommonResponse.createForSuccess(new ArrayList<>());
+    public CommonResponse<PageInfo<Comment>> list(@RequestBody CommonPageDTO commonPageDTO) {
+        return CommonResponse.createForSuccess(commentService.list(commonPageDTO));
     }
 }

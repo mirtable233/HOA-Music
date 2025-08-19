@@ -8,7 +8,7 @@ public class UserContext {
         threadLocal.set(id);
     }
 
-    public static Integer getCurrentId() {
+    public static Long getCurrentId() {
         return threadLocal.get();
     }
 
