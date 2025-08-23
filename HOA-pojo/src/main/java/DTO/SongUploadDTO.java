@@ -6,11 +6,12 @@ import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BatchUploadDTO {
+public class SongUploadDTO {
     private MultipartFile songFile;
     private MultipartFile coverFile;
     private MultipartFile lyricFile;
@@ -22,4 +23,5 @@ public class BatchUploadDTO {
     private String language;
     private String description;
     private LocalDate releaseDate;
+    private List<Integer> genreIds;
 }

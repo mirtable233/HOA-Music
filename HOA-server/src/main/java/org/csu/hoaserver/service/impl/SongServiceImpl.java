@@ -1,13 +1,11 @@
 package org.csu.hoaserver.service.impl;
 
 import DO.Song;
-import DTO.BatchUploadDTO;
-import com.aliyun.oss.OSSException;
+import DTO.SongUploadDTO;
 import com.aliyuncs.exceptions.ClientException;
 import context.UserContext;
 import lombok.extern.slf4j.Slf4j;
 import org.csu.hoaserver.dao.SongDao;
-import org.csu.hoaserver.dao.UserDao;
 import org.csu.hoaserver.service.SongService;
 import org.jaudiotagger.audio.AudioFile;
 import org.jaudiotagger.audio.AudioFileIO;
@@ -25,8 +23,6 @@ import util.AliyunOSSOperator;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 @Slf4j
@@ -39,30 +35,31 @@ public class SongServiceImpl implements SongService {
 
     @Override
     @Transactional
-    public void uploadSong(BatchUploadDTO batchUploadDTO) throws IOException,
+    public void uploadSong(SongUploadDTO songUploadDTO) throws IOException,
             ClientException, CannotReadException, TagException, InvalidAudioFrameException, ReadOnlyFileException {
         Integer uploaderId = UserContext.getCurrentId();
-        List<Song> songs = new ArrayList<>();
         log.info("批量上传歌曲文件，上传者id：[{}]", uploaderId);
 
-            MultipartFile songFile = batchUploadDTO.getSongFile();
+            MultipartFile songFile = songUploadDTO.getSongFile();
             String url = ossOperator.uploadFile(songFile);
             File tempFile = File.createTempFile("temp", ".mp3");
             songFile.transferTo(tempFile);
             AudioFile audioFile = AudioFileIO.read(tempFile);
             Integer duration = audioFile.getAudioHeader().getTrackLength();
-            String cover = ossOperator.uploadFile(batchUploadDTO.getCoverFile());
-            String lyric = ossOperator.uploadFile(batchUploadDTO.getLyricFile());
+            String cover = ossOperator.uploadFile(songUploadDTO.getCoverFile());
             Song song = new Song();
-            BeanUtils.copyProperties(batchUploadDTO, song);
+            BeanUtils.copyProperties(songUploadDTO, song);
+            if(songUploadDTO.getLyricFile()!=null) {
+                String lyric = ossOperator.uploadFile(songUploadDTO.getLyricFile());
+                song.setLyric(lyric);
+            }
             song.setCover(cover);
-            song.setLyric(lyric);
             song.setDuration(duration);
             song.setUrl(url);
             song.setUploaderId(uploaderId);
             song.setUploadDate(LocalDate.now());
-            songs.add(song);
+            songDao.uploadSong(song);
+            songDao.uploadGenresBySong(song.getId(),songUploadDTO.getGenreIds());
 
-        songDao.uploadSong(songs);
     }
 }

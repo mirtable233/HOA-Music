@@ -17,3 +17,6 @@ HOA:
     host: 192.168.100.135
     port: 6379
     timeout: 5000
+  wechat:
+    appid: wx5c79879ee9cb8bdd
+    secret: 88debfa6fa5344a0a6da436dddde7b95

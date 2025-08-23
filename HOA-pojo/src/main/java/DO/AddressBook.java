@@ -16,12 +16,12 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class AddressBook implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final int serialVersionUID = 1;
 
-    private Long id;
+    private Integer id;
 
     //用户id
-    private Long userId;
+    private Integer userId;
 
     //收货人
     private String consignee;

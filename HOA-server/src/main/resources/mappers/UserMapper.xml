@@ -22,4 +22,7 @@
         select * from user
         where username = #{username} and password = #{password}
     </select>
+    <select id="getByOauthUid" resultType="DO.User">
+        select * from user where oauth_uid = #{oauthUid}
+    </select>
 </mapper>

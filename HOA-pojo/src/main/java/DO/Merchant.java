@@ -10,12 +10,13 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Reply implements Serializable {
+public class Merchant implements Serializable {
     private Integer id;
-    private Integer commentId;
     private Integer userId;
-    private String replyUserId;
-    private String content;
+    private String storeName;
+    private String businessLicense;
+    private Integer addressBookId;
+    private String contactName;
     private LocalDateTime createTime;
-    private Integer parentReplyId;
+    private LocalDateTime updateTime;
 }

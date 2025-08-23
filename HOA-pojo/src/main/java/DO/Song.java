@@ -5,13 +5,14 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Song {
+public class Song implements Serializable {
     private Integer id;          // 歌曲ID
     private String name;         // 歌曲名称
     private Integer duration;    // 时长（秒）

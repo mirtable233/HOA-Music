@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.csu.hoaserver.dao.SongDao">
-    <insert id="uploadSong" useGeneratedKeys="true">
+    <insert id="uploadSong" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
         INSERT INTO song
         (name, duration, main_singer_id, producer, composer, label, language, description,
         cover, url, lyric, uploader_id, release_date, upload_date)
@@ -11,5 +11,13 @@
             #{song.label}, #{song.language}, #{song.description},
             #{song.cover}, #{song.url}, #{song.lyric}, #{song.uploaderId},
             #{song.releaseDate}, #{song.uploadDate})
+    </insert>
+    <insert id="uploadGenresBySong">
+        INSERT into song_genre
+        (song_id, genre_id)
+        values
+            <foreach collection="genreIds" item="genreId" separator=",">
+                (#{id},#{genreId})
+            </foreach>
     </insert>
 </mapper>

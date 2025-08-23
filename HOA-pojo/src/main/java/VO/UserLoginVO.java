@@ -1,17 +1,20 @@
-package DO;
+package VO;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
-@AllArgsConstructor
+@Builder
 @NoArgsConstructor
-public class Region implements Serializable {
+@AllArgsConstructor
+public class UserLoginVO implements Serializable {
+
     private Integer id;
-    private String name;
-    private String chName;
-    private String code;
+    private String openid;
+    private String token;
+
 }
